@@ -7,11 +7,11 @@ import java.util.Scanner;
  * clase Notas contiene los metodos usados para el calculo y mostrar las notas
  * que fueron introducidas
  * @author Claudio R Lemes S Junior
- * @see notas
+ * @see Notas
  * @version 1.0
  */
 
-public class notas {
+public class Notas {
     // declaramos la variables que nos hacen falta
     double uf1, uf2, uf3;
     double acu1, acu2, acu3, def;
@@ -132,7 +132,7 @@ public class notas {
 
     public static void main(String[] args) {
         // creamos mecanismos para llamar a cualquier metodo fuera de la clase
-        notas fc= new notas();
+        Notas fc= new Notas();
 
         fc.ingresaNotas();
 
