@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Notas {
     // declaramos la variables que nos hacen falta
     double uf1, uf2, uf3;
-    double acu1, acu2, acu3, def;
+    double acumulado1, acumulado2, acumulado3, definitiva;
     //utilizamos un scanner para poder introducir datos
     Scanner entrada = new Scanner(System.in);
 
@@ -81,11 +81,11 @@ public class Notas {
      */
 
     public void calculoNotas() {
-        acu1 = uf1 * 0.35;
-        acu2 = uf2 * 0.35;
-        acu3 = uf3 * 0.30;
+        acumulado1 = uf1 * 0.35;
+        acumulado2 = uf2 * 0.35;
+        acumulado3 = uf3 * 0.30;
 
-        def = acu1 + acu2+ acu3;
+        definitiva = acumulado1 + acumulado2 + acumulado3;
 
         //hasta aqui la tenemos calculada pero no la mostramos
     }
@@ -102,11 +102,11 @@ public class Notas {
         System.out.println(" nota2 = " + uf2);
         System.out.println(" nota3 = " + uf3);
 
-        System.out.println(" acumuado 1 = "+ acu1);
-        System.out.println(" acumuado 2 = "+ acu2);
-        System.out.println(" acumuado 3 = "+ acu3);
+        System.out.println(" acumuado 1 = "+ acumulado1);
+        System.out.println(" acumuado 2 = "+ acumulado2);
+        System.out.println(" acumuado 3 = "+ acumulado3);
 
-        System.out.println(" nota definitiva es = "+ def);
+        System.out.println(" nota definitiva es = "+ definitiva);
 
     }
     /**
@@ -115,9 +115,9 @@ public class Notas {
      */
     public void aprobado() {
 
-        if(def<5 && def>=0) {
+        if(definitiva <5 && definitiva >=0) {
             System.out.println("suspendido");
-        }else if (def>=5 && def<=10 ) {
+        }else if (definitiva >=5 && definitiva <=10 ) {
             System.out.println("aprobado");
         }else {
             System.out.println(" error en la notas");
